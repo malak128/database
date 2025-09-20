@@ -8,7 +8,7 @@ import pyodbc
 
 # Connect to the database
 conn = pyodbc.connect(
-    'DRIVER={SQL Server};SERVER=LAPTOP-L94G5GOL\\SQLEXPRESS;DATABASE=E-commerce;Trusted_Connection=yes;'
+    'DRIVER={SQL Server};SERVER=YOUR_SERVER_NAME;DATABASE=E-commerce;Trusted_Connection=yes;'
 )
 
 primary_keys = {
@@ -277,3 +277,4 @@ if __name__ == '__main__':
     mainWin = TableSelectionWindow()
     mainWin.show()
     sys.exit(app.exec())
+
